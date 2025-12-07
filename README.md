@@ -3,11 +3,11 @@
 ### Reporte: Sensor utrasónico con Tarjeta ESP32
 
 - Introducción
-
-Utilizar ESP32
-Medir temperatura y humedad (DHT22).
-Medir distancia mediante ultrasonido (HC-SR04).
-Mostrar la información en una pantalla LCD 16x2.
+El sensor ultrasónico HC-SR04 es un dispositivo capaz de medir distancias utilizando ondas de sonido de alta frecuencia. Su funcionamiento se basa en el envío de un pulso ultrasónico y la detección del eco reflejado por un objeto. La ESP32, gracias a su velocidad y múltiples pines de entrada/salida, permite procesar esta señal con precisión.
+- OBJETIVO
+   - Simular el funcionamiento del sensor HC-SR04 con una ESP32.
+   - Medir distancias en centímetros y visualizar el resultado en el monitor serial.
+   - Analizar el comportamiento del sensor dentro del entorno virtual Wokwi
 
 - Materiales Utilizados
 
@@ -27,7 +27,7 @@ Mostrar la información en una pantalla LCD 16x2.
 - Colocar el sensor ultrasonico y la LCD
 - Realizar la conexión correspondiente
   
-  ![]( )
+  ![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/ULTRASONICO%20CONEXION%20SIMPLE.PNG)
 
 - Colocar el siguiente código
   
@@ -95,18 +95,21 @@ void loop()
 }
 ```
 ADJUNTAR LAS LIBRERÍAS CORRESPONDIENTES 
-![](      )
+![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/LIBRERIAS.PNG)
 - COMPILAR
-![](        )
+![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/COMPILAR%20SIMPLE%202.0.PNG)
   
 - FUNCIONAMIENTO 
 En la simulación de Wokwi se observa:
 La pantalla LCD actualiza la distancia.
 El sensor ultrasónico responde correctamente cuando se modifica la distancia en el simulador.
+El HC-SR04 opera mediante dos pines principales:
+- Trigger (TRIG): Genera un pulso de 10 µs para iniciar la medición.
+- Echo (ECHO): Recibe el eco y regresa un pulso proporcional al tiempo de viaje.
 
-  ![]( )
-   ![]( )
-   ![]( )
+  ![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/DISTANCIA%20164%20CM.PNG)
+   ![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/MODULO%2005%20SIMPLE.PNG)
+   ![](https://github.com/Mayte-10/REPORTE-SENSOR-ULTRASONICO-/blob/main/MAYTE%20TORRES%20SIMPLE.PNG)
    ![]( )
 
 
